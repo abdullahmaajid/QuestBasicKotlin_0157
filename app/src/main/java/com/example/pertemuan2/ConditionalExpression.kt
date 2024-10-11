@@ -34,7 +34,7 @@ fun ConditionalStatement() {
         val result = value.toInt()
         println("Result: $result")
     }
-    catch (e: NumberFormatEception) {
+    catch (e: NumberFormatException) {
         println("Invalid Number")
     }
     }
@@ -52,14 +52,10 @@ fun Perulangan(){
         println("Car type: $car")
     }
 
-    var x = 1
-    while (x <= 5) {
-        println("Perulangan ke-$x")
-        x++
-    }
 
-    var y = 1
-    do {
+    var x = 1
+    while (x <= 5)
+    {
         println("Perulangan ke-$x")
         x++
     }
@@ -69,7 +65,7 @@ fun Perulangan(){
         println("Perulangan ke-$y")
         y++
     }
-        while (y <==5)
+        while (y <= 5)
     }
 
 
