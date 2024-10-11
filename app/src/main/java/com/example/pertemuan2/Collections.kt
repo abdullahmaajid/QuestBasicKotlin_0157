@@ -13,7 +13,7 @@ fun ContohList(){
 
     // List Mutable
     val shape: MutableList<String> = mutableListOf("Circle", "Square", "Triangle")
-    print(shape)
+    println(shape)
 
     // Menambahkan data ke dalam List Mutable
     shape.add("Circle")
@@ -25,6 +25,7 @@ fun ContohList(){
 
     // Mengubah data di dalam List Mutable
     shape[0] = "Oval"
+    println(shape)
 
     // List Read Only
     val shapesLocked: List<String> = shape
@@ -36,17 +37,17 @@ fun ContohList(){
     // Set Read-Only menggunakan setOf
     // Set Mutable menggunakan mutableSetOf
 
-    fun ContohSet(){
+    fun ContohSet() {
         println()
         println("=== Set ===")
 
         // Set Read-Only
-        val readOnlyAbjad = listOf("A", "B", "C")
+        val readOnlyAbjad = setOf("A", "B", "C")
         println(readOnlyAbjad)
 
         // Set Mutable
         val shape: MutableSet<String> = mutableSetOf("Circle", "Square", "Triangle")
-        print(shape)
+        println(shape)
 
         // Menambahkan data ke dalam List Mutable
         shape.add("Recteangle")
@@ -72,11 +73,11 @@ fun ContohList(){
         println()
         print("=== Map ===")
         // Map Read-Only
-        val readOnlyShape: Map<String>, Int> = mapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
+        val readOnlyShape: Map<String, Int> = mapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
         println(readOnlyShape)
 
         // Map Mutable
-        val shape: MutableMap<String>, Int> = mutmapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
+        val shape: MutableMap<String, Int> = mutableMapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
         println(shape)
 
         // Menambahkan data ke dalam map Mutable
@@ -84,7 +85,7 @@ fun ContohList(){
         println(shape)
 
         // Menghapus data dari Map Mutable
-        shape.remove["Circle"] = 4
+        shape.remove("Circle")
         println(shape)
 
         // Mengubah data di dalam Map Mutable
@@ -97,7 +98,7 @@ fun ContohList(){
     }
 
 
-    }
+
 
     fun main(){
         ContohList()
