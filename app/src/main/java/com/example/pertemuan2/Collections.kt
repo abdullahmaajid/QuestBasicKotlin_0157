@@ -25,5 +25,10 @@ fun ContohList(){
     val shapesLocked: List<String> = shape
     println(shapesLocked)
 
+    fun main(){
+        ContohList()
+        ContohSet()
+        ContohMap()
+    }
 
 }
